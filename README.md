@@ -8,12 +8,14 @@ Meio sem tempo irmão pro readme, mas você vai precisar de:
 0 - um computador (que eu não posso te ajudar com isso) e python (que eu já te ajudei com isso, caso não tenha/não saiba cheque algum dos meus outros dois repositórios facebot ou bbbot que eu explico tudo)
 
 1 - imagem do brother, do botão do captcha (que tem que clicar em "sou humano" rs) e do votar novamente
+
 Simples: tira print, corta esse pedaço, salva
 de qualquer forma vou incluir as minhas e a foto do Bill, que é pra quem o bot está pronto pra votar (se quiser votar em outra pessoa, você que lute)
 
 2 - o bot funciona por reconhecimento de imagem, então precisamos do pyautogui e do PIL (que só usei pra otimizar a abertura de imagem, não é vitalmente necessário, caso não queira usar é só rancar de lá)
 
 $ pip install pyautogui
+
 $ pip install pillow
 
 3 - ... infelizmente manter o browser aberto, já que qualquer tentativa de automação em segundo plano -> falhei
@@ -33,6 +35,5 @@ meti um monte de aleatoriedade tanto em onde ele vai clicar (tomando cuidado pra
 Botei uns sleep aí no meio porque meu browser tava demorando pra abrir e dava problema, caso o seu seja mais rápido/lento é só ir tirando/diminuindo/aumentando o tempo dos sleep
 
 ### Problemas
-vish... pode ter uns problemas hein, do tipo: a tela do seu PC pode ser dimensionalmente diferente da minha, então você vai precisar mapear melhor o tamanho dos botões e seus limites usando pyautogui.position(), mas esperamos que não chegue a isso
-sei lá, as imagens podem dar treta? Qualquer coisa tira print novo do seu PC aí e nomeia do mesmo jeito que tá os meus.
-não força a barra em velocidade de clique que o site desconfia.
+vish... pode ter uns problemas hein, do tipo: a tela do seu PC pode ser dimensionalmente diferente da minha, então você vai precisar mapear melhor o tamanho dos botões e seus limites usando pyautogui.position(), mas esperamos que não chegue a isso.
+Sei lá, as imagens podem dar treta? Qualquer coisa tira print novo do seu PC aí e nomeia do mesmo jeito que tá os meus. Não força a barra em velocidade de clique que o site desconfia.
