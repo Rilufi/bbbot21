@@ -1,7 +1,7 @@
 # bbbot21
 Teste de bot por reconhecimento de imagem simulando cliques humanos (aleatórios)
 
-tl;dr: abre o site da Globo, entra na sua conta, abre a página do paredão, deixa o brother visível e liga o bot que ele se vira
+## tl;dr: abre o site da Globo, entra na sua conta, abre a página do paredão, deixa o brother visível e liga o bot que ele se vira
 
 Meio sem tempo irmão pro readme, mas você vai precisar de:
 
@@ -13,23 +13,23 @@ de qualquer forma vou incluir as minhas e a foto do Bill, que é pra quem o bot 
 
 2 - o bot funciona por reconhecimento de imagem, então precisamos do pyautogui e do PIL (que só usei pra otimizar a abertura de imagem, não é vitalmente necessário, caso não queira usar é só rancar de lá)
 
-pip install pyautogui
-pip install pillow
+$ pip install pyautogui
+$ pip install pillow
 
 3 - ... infelizmente manter o browser aberto, já que qualquer tentativa de automação em segundo plano -> falhei
 
 Ok, a treta toda é que não tem como abrir o site da Globo por algum browser automatizado tipo o selenium já que a header denuncia (você basicamente está com uma melância no pescoço escrito BOT) e qnd tenta votar o site prontamente chama o hCaptcha que começa a perguntar aquelas dezenas de "escolha imagem de um barco" que nem eu sei responder direito, quem dirá meu mero botzinho.
 
-A solução:
+### A solução:
 usar reconhecimento de imagem pra achar onde clicar e apertar os botões como se fosse uma pessoa.
 
-A nova treta:
+### A nova treta:
 como apontado pelo Pedrinho (https://github.com/nasaphreak), a galera lá monitora onde e em quanto tempo você clica, então caso demore sempre o mesmo tanto de tempo e clica sempre no mesmo lugar, eles vão descobrir e chamar as imagens do hCaptcha só pra ~testar se tu não é um bot mesmo e ~pasmem~ nós somos (#SomosTodosBots)
 
-A solução final:
+### A solução final:
 meti um monte de aleatoriedade tanto em onde ele vai clicar (tomando cuidado pra não ser fora da área clicável) tanto em COMO ele vai clicar (namoral, eu até coloquei pra ele escolher aleatoriamente na lista de funções disponíveis, cada vez), então o jeito e a duração do clique muda.
 
-Problemas:
+### Problemas:
 vish... pode ter uns problemas hein, do tipo: a tela do seu PC pode ser dimensionalmente diferente da minha, então você vai precisar mapear melhor o tamanho dos botões e seus limites usando pyautogui.position(), mas esperamos que não chegue a isso
 sei lá, as imagens podem dar treta? Qualquer coisa tira print novo do seu PC aí e nomeia do mesmo jeito que tá os meus.
 não força a barra em velocidade de clique que o site desconfia.
