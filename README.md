@@ -1,7 +1,7 @@
 # bbbot21
-Teste de bot por reconhecimento de imagem simulando cliques humanos (aleatórios)
+## Teste de bot por reconhecimento de imagem simulando cliques humanos (aleatórios)
 
-## tl;dr: abre o site da Globo, entra na sua conta, abre a página do paredão, deixa o brother visível e liga o bot que ele se vira
+### tl;dr: abre o site da Globo, entra na sua conta, abre a página do paredão, deixa o brother visível e liga o bot que ele se vira
 
 Meio sem tempo irmão pro readme, mas você vai precisar de:
 
