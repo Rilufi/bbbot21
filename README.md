@@ -36,4 +36,4 @@ Botei uns sleep aí no meio porque meu browser tava demorando pra abrir e dava p
 
 ### Problemas
 vish... pode ter uns problemas hein, do tipo: a tela do seu PC pode ser dimensionalmente diferente da minha, então você vai precisar mapear melhor o tamanho dos botões e seus limites usando pyautogui.position(), mas esperamos que não chegue a isso.
-Sei lá, as imagens podem dar treta? Qualquer coisa tira print novo do seu PC aí e nomeia do mesmo jeito que tá os meus. Não força a barra em velocidade de clique que o site desconfia.
+Sei lá, as imagens podem dar treta? Qualquer coisa tira print novo do seu PC aí e nomeia do mesmo jeito que tá os meus. Não força a barra em velocidade de clique que o site desconfia. Por fim, torce pro site não pedir captcha de imagem, se não já era, nesse caso espera um pouco/muda de browser, etc.
