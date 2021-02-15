@@ -7,7 +7,7 @@ Meio sem tempo irmão pro readme, mas você vai precisar de:
 
 0 - um computador (que eu não posso te ajudar com isso) e python (que eu já te ajudei com isso, caso não tenha/não saiba cheque algum dos meus outros dois repositórios facebot ou bbbot que eu explico tudo)
 
-1 - imagem do brother, do botão do captcha (que tem que clicar em "sou humano" rs) e do votar novamente
+1 - imagem do nome do brother, do botão do captcha (que tem que clicar em "sou humano" rs) e do votar novamente
 
 Simples: tira print, corta esse pedaço, salva
 de qualquer forma vou incluir as minhas e a foto do brother, que é pra quem o bot está pronto pra votar (se quiser votar em outra pessoa, você que lute)
