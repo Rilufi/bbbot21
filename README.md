@@ -10,7 +10,7 @@ Meio sem tempo irmão pro readme, mas você vai precisar de:
 1 - imagem do brother, do botão do captcha (que tem que clicar em "sou humano" rs) e do votar novamente
 
 Simples: tira print, corta esse pedaço, salva
-de qualquer forma vou incluir as minhas e a foto do Bill, que é pra quem o bot está pronto pra votar (se quiser votar em outra pessoa, você que lute)
+de qualquer forma vou incluir as minhas e a foto do brother, que é pra quem o bot está pronto pra votar (se quiser votar em outra pessoa, você que lute)
 
 2 - o bot funciona por reconhecimento de imagem, então precisamos do pyautogui e do PIL (que só usei pra otimizar a abertura de imagem, não é vitalmente necessário, caso não queira usar é só rancar de lá)
 
