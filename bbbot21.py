@@ -13,22 +13,23 @@ mouse_func = [pyautogui.easeOutBack, pyautogui.easeInOutQuad, pyautogui.easeOutQ
 
 def voto():
     sleep(1)
-    w, z = pyautogui.locateCenterOnScreen(capt)
+    w, z = pyautogui.locateCenterOnScreen(capt, confidence=0.8)
     pyautogui.moveTo(w+randint(-20,150), z+randint(-30,10), uniform(0.5, 2.0), choice(mouse_func))
     pyautogui.click()
     sleep(2)
-    a, b = pyautogui.locateCenterOnScreen(vot)
+    a, b = pyautogui.locateCenterOnScreen(vot, confidence=0.8)
     pyautogui.moveTo(a+randint(-250,250), b+randint(-15,15), uniform(0.5, 2.0), choice(mouse_func))
     pyautogui.click()
     sleep(1)
 
 
 while True:
-    x, y = pyautogui.locateCenterOnScreen(brother)
-    pyautogui.moveTo(x+randint(-80,300), y+randint(-40,40), uniform(0.5, 2.0), choice(mouse_func))
+    pyautogui.scroll(-100)
+    x, y = pyautogui.locateCenterOnScreen(brother, confidence=0.8)
+    pyautogui.moveTo(x+randint(-80,300), y+randint(-15,15), uniform(0.5, 2.0), choice(mouse_func))
     pyautogui.click()
     sleep(1)
-    if pyautogui.locateCenterOnScreen(vot) == None:
+    if pyautogui.locateCenterOnScreen(vot, confidence=0.8) == None:
         pyautogui.scroll(-300)
         voto()
     else:
