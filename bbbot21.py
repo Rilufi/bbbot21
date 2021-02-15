@@ -3,7 +3,7 @@ from time import sleep
 from PIL import Image
 from random import *
 
-brother = Image.open('arcrebiano.png')
+brother = Image.open('nego_di.png')
 capt = Image.open('capt.png')
 vot =  Image.open('vot_again.png')
 
