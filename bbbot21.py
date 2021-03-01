@@ -33,7 +33,7 @@ def irmao():
         pyautogui.scroll(-300)
         sleep(1)
         x, y = pyautogui.locateCenterOnScreen(brother, confidence=0.8)
-        pyautogui.moveTo(x+randint(-50,300), y+randint(-10,10), uniform(0.5, 2.0), choice(mouse_func))
+        pyautogui.moveTo(x+randint(-50,300), y+randint(-5,5), uniform(0.5, 2.0), choice(mouse_func))
         pyautogui.click()
         sleep(1)
         if pyautogui.locateCenterOnScreen(vot, confidence=0.8) == None:
