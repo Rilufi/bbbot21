@@ -29,10 +29,10 @@ usar reconhecimento de imagem pra achar onde clicar e apertar os botões como se
 como apontado pelo Pedrinho (https://github.com/nasaphreak), a galera lá monitora onde e em quanto tempo você clica, então caso demore sempre o mesmo tanto de tempo e clica sempre no mesmo lugar, eles vão descobrir e chamar as imagens do hCaptcha só pra ~testar se tu não é um bot mesmo e ~pasmem~ nós somos (#SomosTodosBots)
 
 ### A solução final
-meti um monte de aleatoriedade tanto em onde ele vai clicar (tomando cuidado pra não ser fora da área clicável) tanto em COMO ele vai clicar (namoral, eu até coloquei pra ele escolher aleatoriamente na lista de funções disponíveis, cada vez), então o jeito e a duração do clique muda.
+meti um monte de aleatoriedade tanto em onde ele vai clicar (tomando cuidado pra não ser fora da área clicável) tanto em COMO ele vai clicar (namoral, eu até coloquei pra ele escolher aleatoriamente na lista de funções disponíveis, cada vez), então o jeito e a duração do clique muda.  Também inclui ele apertar um f5 pra atualizar a página sempre que der ruim (caso ele não encontre a imagem, começa de novo) e descobri que algumas vezes quando o hCaptcha é acionado, alguns refreshs podem confundir o captcha e ele não chama kkk
 
 ### Otimização
-Botei uns sleep aí no meio porque meu browser tava demorando pra abrir e dava problema, caso o seu seja mais rápido/lento é só ir tirando/diminuindo/aumentando o tempo dos sleep
+Botei uns sleep aí no meio porque meu browser tava demorando pra abrir e dava problema, caso o seu seja mais rápido/lento é só ir tirando/diminuindo/aumentando o tempo dos sleep.
 
 ### Problemas
 vish... pode ter uns problemas hein, do tipo: a tela do seu PC pode ser dimensionalmente diferente da minha, então você vai precisar mapear melhor o tamanho dos botões e seus limites usando pyautogui.position(), mas esperamos que não chegue a isso.
